@@ -474,7 +474,6 @@ describe("buildAuthenticatedFetch", () => {
   it("emits the appropriate events when refreshing the token fails", async () => {
     const mockedFetch = jest.requireMock("cross-fetch") as jest.Mock;
     const mockedFreshener = mockTokenRefresher(mockDefaultTokenSet());
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     mockedFreshener.refresh = jest
       .fn()
       .mockRejectedValueOnce(
@@ -509,7 +508,6 @@ describe("buildAuthenticatedFetch", () => {
   it("emits the appropriate events when an unexpected response is received", async () => {
     const mockedFetch = jest.requireMock("cross-fetch") as jest.Mock;
     const mockedFreshener = mockTokenRefresher(mockDefaultTokenSet());
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     mockedFreshener.refresh = jest
       .fn()
       .mockRejectedValueOnce(
