@@ -79,7 +79,7 @@ cd packages/browser/examples/single/bundle/
 npm ci
 npm run start
 ```
-Go to http://localhost:3001/.
+Go to http://localhost:3113/.
 
 ### NodeJS
 
